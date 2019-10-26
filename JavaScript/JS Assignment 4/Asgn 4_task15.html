@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /* 15. Write a program to ask the user about his age. Calculate and show
+        his birth year in your browser */
+
+        var age = prompt("Enter your age");
+        var today = new Date(); 
+        var birthYear = today.getFullYear() - age;
+        document.write("Your age is " + age + "<br>");
+        document.write("Your birth year is " + birthYear);
+        
+    </script>
+</body>
+
+</html>

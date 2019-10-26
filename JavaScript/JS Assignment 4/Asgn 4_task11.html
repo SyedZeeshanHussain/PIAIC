@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /* 11. Write a program to take input of a Number and find a Mean of All Digits
+        E.g: 666 = 6 + 6 + 6 = 18 /3 = 6
+        1246 = 1 + 2 + 4 + 5 = 12 / 4 = 3 */
+
+        var input = prompt("Enter numbers");
+        var digits = ("" + input).split("");
+        var mean = 0;
+
+        for (var i = 0; i < digits.length; i++) {
+            mean += (digits[i]) / digits.length;
+        }
+        document.write("Your input is: " + input + "<br>")
+        document.write("Mean of " + digits + " is " + mean);
+        
+
+    </script>
+</body>
+
+</html>

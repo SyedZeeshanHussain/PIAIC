@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        /* 3. Write a program to take password as an input from user. The
+        password must qualify these requirements:
+        a. It should contain alphabets and numbers
+        b. It should not start with a number
+        c. It must at least 8 characters long
+        d. If the password does not meet the above requirements, prompt
+        the user to enter a valid password. For character codes of a-z,
+        A-Z & 0-9 */
+
+        var password = prompt("Enter the password");
+
+        var pwdFormat = /(?=.*\d)(?=.*[a-z]).{8,}/;
+        var noStartwithNum = /^[a-z][a-z0-9_]*$/;
+       // var pwdFormat = /^[A-Za-z]\w{8,}$/;
+
+        if (password.match(pwdFormat) && password.match(noStartwithNum)) {
+            alert("Password is validated");
+        }
+                   
+        else {
+            alert("Please enter valid password!");
+            document.write("<h3>Password Rules:</h3>");
+            document.write(" a. It should contain alphabets and numbers<br>");
+            document.write(" b. It should not start with a number<br>");
+            document.write(" c. It must at least 8 characters long<br>");
+        }
+        
+
+
+    </script>
+</body>
+
+</html>

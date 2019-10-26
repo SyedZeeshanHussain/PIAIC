@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        /* 4. Write a program to validate email address with following evaluation
+        a. This string must contain @
+        b. Ths string must contact chars
+        c. The @ must have at least 1 char in front
+        d. The string must contain .(dot) after @ and at least 1 char. */
+
+        var email = prompt("Enter your email i.d");
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+
+        if (email.match(mailformat)) {
+            alert("Email address is validated");
+        }
+        else {
+            alert("Please type a valid email address!");
+        }
+
+
+    </script>
+</body>
+
+</html>
