@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Assignment # 5</title>
+</head>
+
+<body>
+    <script>
+
+        /* 2. Write a function that calculates the area of a rectangle.
+            A = width * height
+            Pass width and height in following manner:
+            i. Arguments as value
+            ii. Arguments as variables */
+
+
+        // Method 1 : Argument as Value.
+        function area(length, width) {
+            var area = length * width;
+            return console.log("Area of ractangle is: " + area);
+        }
+
+        area(4, 3);
+
+
+        // Method 2 : Argument as Variable.
+        var length = prompt("Enter the length of ractangle");
+        var width = prompt("Enter the width of ractangle");
+
+        function area2() {
+            var area = length * width;
+            return console.log("Area of ractangle is: " + area);
+        }
+
+        area2();
+
+
+
+    </script>
+</body>
+
+</html>

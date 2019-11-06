@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Assignment # 5</title>
+</head>
+
+<body>
+    <script>
+
+        /* 10. Write a JavaScript function that accept string and returns the count
+            of vowel used within the string. */
+        function countVowels(str) {
+            var vowelsCount = 0;
+            var string = str.toLowerCase();
+            for (var i = 0; i < string.length; i++) {
+                switch (string.charAt(i)) {
+                    case "a":
+                    case "e":
+                    case "i":
+                    case "o":
+                    case "u":
+                        vowelsCount += 1;
+                        break;
+                }
+            }
+            console.log(vowelsCount + " Vowels");
+        }
+        
+        countVowels("ZEESHAN HUSSAIN"); // 6 vowels
+        countVowels("Hello World!"); // 3 vowels
+        countVowels("PIAIC Blockchain First Batch"); // 8 vowels 
+        countVowels("A.E.I.O.U"); // 5 vowels */
+
+    </script>
+</body>
+
+</html>
