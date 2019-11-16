@@ -23,7 +23,7 @@
         var password = prompt("Enter the password");
         var pwdFormat = /^[A-Za-z]\w{8,}$/;
 
-        if (password.match(pwdFormat)) {
+        if (password.match(pwdFormat) && isNaN(parseInt(password[0])) {
             alert("Password is validated");
         }
                    
