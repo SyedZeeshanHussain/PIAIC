@@ -21,12 +21,10 @@
         A-Z & 0-9 */
 
         var password = prompt("Enter the password");
+=
+        var pwdFormat = /^[A-Za-z]\w{8,}$/;
 
-        var pwdFormat = /(?=.*\d)(?=.*[a-z]).{8,}/;
-        var noStartwithNum = /^[a-z][a-z0-9_]*$/;
-       // var pwdFormat = /^[A-Za-z]\w{8,}$/;
-
-        if (password.match(pwdFormat) && password.match(noStartwithNum)) {
+        if (password.match(pwdFormat)) {
             alert("Password is validated");
         }
                    
